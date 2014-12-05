@@ -1,0 +1,59 @@
+@import "normalize.less";
+@import "elements.less";
+@import "prefixer.less";
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+a,a:visited{
+	text-decoration: none;
+	color: #5fd36f;
+	&:hover{
+		color: #408d4b;
+	}
+}
+nav{
+	padding: 20px;
+	background: #fafafa;
+	.left{
+		float: left;
+		width: 80%;
+	}
+	.right{
+		float: right;
+		width: 20%;
+		text-align: right;
+	}
+	a{
+		text-transform: uppercase;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-weight: 200;
+		font-size: 13px;
+		letter-spacing: .2em;
+	}
+}
+main{
+	.box-shadow(0 0 10px rgba(120,120,120,.2));
+	padding: 20px;
+	background: #fefefe;
+	min-height: 80vh;
+}
+footer{
+	background: #111;
+	color: #bbb;
+	text-align: center;
+	font-size: 12px;
+	padding: 20px;
+}

@@ -1,0 +1,15 @@
+<template name="menu">
+	<div class="inner clearfix">
+		<div class="left">
+			<a href="/">home</a>
+			<a href="/contact">contact</a>
+		</div>
+		<div class="right">
+		{{#if user}}
+			Hello {{user.name}}
+		{{else}}
+			Welcome!
+		{{/if}}
+		</div>
+	</div>
+</template>
