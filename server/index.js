@@ -32,5 +32,6 @@
 // }).listen(1337);
 // console.log("Listening!");
 
-var fs = Npm.require('fs');
-var sites = fs.readdirSync('/sites/');
+// var fs = Npm.require('fs');
+// var sites = fs.readdirSync('../private/sites');
+// console.log(process.cwd());

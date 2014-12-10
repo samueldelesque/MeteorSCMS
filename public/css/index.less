@@ -24,6 +24,19 @@ a,a:visited{
 		color: #408d4b;
 	}
 }
+.btn,a.btn{
+	color: #fff;
+	background: #5fd36f;
+	line-height: 36px;
+	padding: 12px 16px;
+	.rounded(5px);
+	.box-shadow(1px 1px 6px rgba(10,14,10,.4));
+	.text-shadow(1px 1px 1px rgba(0,0,0,.4));
+	&:hover{
+		color: #ddd;
+		background: #408d4b;
+	}
+}
 nav{
 	padding: 20px;
 	background: #fafafa;
@@ -49,6 +62,32 @@ main{
 	padding: 20px;
 	background: #fefefe;
 	min-height: 80vh;
+}
+#control{
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+	background: #222;
+	.panel{
+		padding:20px;
+		width: 400px;
+		max-width: 100%;
+		margin: 100px auto;
+		background: #444;
+		border:5px solid #333;
+		color: #bbb;
+		text-align: center;
+		.rounded(5px);
+		.box-shadow(1px 1px 12px rgba(10,14,10,.2));
+		h1{
+			font-weight: 100;
+			font-size: 34px;
+			margin: 0 0 20px 0;
+		}
+	}
 }
 footer{
 	background: #111;
