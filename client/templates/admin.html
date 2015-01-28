@@ -1,0 +1,12 @@
+<template name="admin">
+	<div id="control">
+		<div class="panel">
+			<h3>You have {{pages.length}} pages.</h3>
+			<div class="pages">
+				{{#each pages}}
+					<div>{{url}}</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</template>
