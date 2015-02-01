@@ -35,3 +35,8 @@
 // var fs = Npm.require('fs');
 // var sites = fs.readdirSync('../private/sites');
 // console.log(process.cwd());
+
+var sites = new Mongo.Collection("sites");
+Meteor.publish("sites", function () {
+  return sites.find({ url: this.session.socket.headers });
+});
